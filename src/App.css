@@ -1,6 +1,6 @@
 /* NAVBAR */
 .navbar {
-  background-color: brown;
+  background-color: rgba(165, 42, 42, 0.53);
   padding: 2vh 5vh;
   box-shadow: 0 0 1vh 0 black;
   position: fixed;
@@ -19,7 +19,7 @@
   text-decoration: none;
   color: white;
   font-size: large;
-  padding: 2.4vh;
+  padding: 2vh;
 }
 .navbar a.active {
   font-weight: 800;
@@ -27,6 +27,8 @@
 .navbar a:not(.logo):hover {
   color: brown;
   background-color: aliceblue;
+  box-shadow: 0 0 0.2vh 0 black;
+  border-radius: 3vh;
 }
 /* NAVBAR */
 
