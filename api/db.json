@@ -1,25 +1,27 @@
+
+
 {
     "products": [
       {
         "id": 1,
         "name": "Green Tea",
         "description": "Natural green tea leaves.",
-        "image": "https://via.placeholder.com/150",
-        "price": 25.99
+        "image": "https://images.pexels.com/photos/1793035/pexels-photo-1793035.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "price": 250.99
       },
       {
         "id": 2,
         "name": "Black Tea",
-        "description": "Black tea with rich flavor.",
-        "image": "https://via.placeholder.com/150",
-        "price": 19.99
+        "description": "turkish black tea.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSmvCUJxqrtwISFcSisSoe4dQc2iHEedd0Fg&s",
+        "price": 190.99
       },
       {
         "id": 3,
         "name": "White Tea",
         "description": "Rare white tea.",
-        "image": "https://via.placeholder.com/150",
-        "price": 29.99
+        "image": "https://images.pexels.com/photos/1362537/pexels-photo-1362537.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "price": 290.99
       }
     ]
   }

@@ -1,6 +1,6 @@
 /* NAVBAR */
 .navbar {
-  background-color: rgba(165, 42, 42, 0.53);
+  background-color: rgba(165, 42, 42);
   padding: 2vh 5vh;
   box-shadow: 0 0 1vh 0 black;
   position: fixed;
