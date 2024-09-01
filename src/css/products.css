@@ -1,9 +1,13 @@
 /* Ürünler sayfası için genel container */
+.productsPage{
+  margin-top: 7vh;
+}
 .products-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 2vh;
     padding: 2vh;
+    position: relative;
   }
   
   /* Ürün kutuları */

@@ -1,18 +1,20 @@
-import './App.css';
-import { Home } from './components/Home';
-import { Navbar } from './components/Navbar';
-import {Routes, Route} from "react-router-dom";
-import { Products } from './components/Products';
-import { WrongPath } from './components/WrongPath';
+import "./App.css";
+import { Home } from "./components/Home";
+import { Navbar } from "./components/Navbar";
+import { Routes, Route } from "react-router-dom";
+import { Products } from "./components/Products";
+import { WrongPath } from "./components/WrongPath";
+import Cart from "./components/Cart";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/products' element={<Products/>}/>
-        <Route path='*' element={<WrongPath/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="*" element={<WrongPath />} />
       </Routes>
     </div>
   );

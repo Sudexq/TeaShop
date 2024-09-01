@@ -1,0 +1,45 @@
+/*ShoppingCartIcon*/
+.shopping-cart-icon {
+    position: relative;
+    display: inline-block;
+    margin-left: 10vh;
+    cursor: pointer;
+  }
+  
+  .shopping-cart-icon svg {
+    color: #fff; /* İkon rengi */
+  }
+  
+  .shopping-cart-icon:hover svg {
+    color: #ff9900; /* Hover durumunda ikon rengi */
+  }
+  /*ShoppingCartIcon*/
+
+  /*Cart.js*/
+  .cartPage{
+    margin-top: 7.5vh;
+    background-color: antiquewhite;
+    width: 90%;
+    
+  }
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .cart-item-image {
+    width: 100px;
+    margin-right: 20px;
+    height: 100px;
+  }
+  
+  .checkout-button {
+    padding: 10px 20px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+   /*Cart.js*/
