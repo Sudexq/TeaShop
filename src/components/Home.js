@@ -1,8 +1,13 @@
 import React from "react";
 import "../css/home.css";
-import { Products } from "./Products";
+import { useNavigate } from "react-router-dom"; // useNavigate'i import ettik
 
 export const Home = () => {
+  const navigate = useNavigate(); // Yönlendirme için hook
+
+  const handleDiscoverClick = () => {
+    navigate("/products"); // Discover'a tıklayınca Products sayfasına git
+  };
   return (
     <div className="welcome-container">
       <div className="overlay"></div>
@@ -12,7 +17,9 @@ export const Home = () => {
           Welcome to the fascinating world of fresh and natural teas. Enjoy
           nature in every sip.
         </p>
-        <button className="cta-button">Discover</button>
+        <button onClick={handleDiscoverClick} className="cta-button">
+          Discover
+        </button>
       </div>
     </div>
   );
