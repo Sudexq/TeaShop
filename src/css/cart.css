@@ -2,16 +2,35 @@
 .shopping-cart-icon {
   position: relative;
   display: inline-block;
-  margin-left: 10vh;
   cursor: pointer;
+  margin-right: 5vh;
 }
 
 .shopping-cart-icon svg {
   color: #fff; /* İkon rengi */
+  font-size: 24px; /* İkon boyutu */
 }
 
 .shopping-cart-icon:hover svg {
   color: #ff9900; /* Hover durumunda ikon rengi */
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+  .shopping-cart-icon{
+    margin-left: auto;
+  }
+  .shopping-cart-icon svg {
+    font-size: 20px; /* İkon boyutunu küçült */
+  }
+}
+@media (max-width: 480px) {
+  .shopping-cart-icon svg {
+    font-size: 15px; /* İkon boyutunu küçült */
+  }
+  .shopping-cart-icon{
+    margin-right: 3vh;
+  }
 }
 /*ShoppingCartIcon*/
 
