@@ -1,4 +1,4 @@
-import React, {useState}from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../photos/logo.png";
 import ShoppingCartIcon from "./ShoppingCartIcon";
@@ -6,39 +6,35 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // FontAwesome
 import { faBars } from "@fortawesome/free-solid-svg-icons"; // Hamburger menü ikonu
 
 export const Navbar = () => {
-  const [isResponsive, setIsResponsive] = useState(false); // Responsive state'i
-
-  const toggleMenu = () => {
-    setIsResponsive(!isResponsive); // Tıkladıkça menüyü açıp kapatır
+  const myFunction = () => {
+    const x = document.getElementById("navbar");
+    if (x) {
+      // Eğer navbar bulunursa
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
   };
 
   return (
-    <nav className={`navbar ${isResponsive ? "navbar-responsive" : ""}`}>
-      <div className="navbar-content">
-        <NavLink className="logo" to="/">
-          <img src={logo} alt="logo" />
-        </NavLink>
+    <nav className="navbar" id="navbar">
+      <NavLink className="logo" to="/">
+        <img src={logo} alt="logo" />
+      </NavLink>
+      
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/products">Products</NavLink>
 
-        <div
-          className={`nav-links ${isResponsive ? "nav-links-responsive" : ""}`}
-        >
-          <NavLink to="/" onClick={toggleMenu}>
-            Home
-          </NavLink>
-          <NavLink to="/products" onClick={toggleMenu}>
-            Products
-          </NavLink>
-        </div>
+      <NavLink className="cart" to="/cart">
+        <ShoppingCartIcon />
+      </NavLink>
 
-        <NavLink className="cart" to="/cart">
-          <ShoppingCartIcon />
-        </NavLink>
-
-        {/* Font Awesome Hamburger Menüsü */}
-        <div className="hamburger" onClick={toggleMenu}>
-          <FontAwesomeIcon icon={faBars} />
-        </div>
-      </div>
+      {/* Font Awesome Hamburger Menüsü */}
+      <NavLink to={void 0} onClick={myFunction()} className="hamburger">
+        <FontAwesomeIcon icon={faBars} />
+      </NavLink>
     </nav>
   );
 };
